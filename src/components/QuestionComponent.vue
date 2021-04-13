@@ -1,7 +1,7 @@
 <template>
     <div class="question_box">
         <h2>lista dell'array</h2>
-        <p v-for="question in questionsArray" :key="question.index">{{ question.question }}</p>
+        <p >{{ questionsArray[0].answers }}</p>
     </div>
 </template>
 <script>
