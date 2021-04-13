@@ -1,14 +1,15 @@
 <template>
     <div class="question_box">
-        <h2>lista dell'array</h2>
-        <p >{{ questionSelected }}</p>
+        <h2>Rispondi alla domanda</h2>
+        <p >{{ questionSelected.question }}</p>
+        
     </div>
 </template>
 <script>
 export default {
     name:'QuestionComponent',
     props:{
-        questionSelected: String,
+        questionSelected: null,
     }
 }
 </script>

@@ -1,5 +1,29 @@
-$body-color: rgb(214, 144, 144);
-
-body {
-  color: $body-color;
+// general setting
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+//  /general settings
+//  utilities classes
+.d_flex{
+  display: flex;
 }
+//  /utilities classes
+// import partials
+@import './partials/answerComponent.scss';
+@import './partials/questionComponent.scss';
+@import './partials/millionComponent.scss';
+//  /import partials
+// header logo
+#app{
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 20rem;
+    margin: 3rem;
+    
+  }
+
+}
+//  /header logo

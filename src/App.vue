@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="d_flex">
     <img alt="Vue logo" src="./assets/million-logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <MillionComponent/>
