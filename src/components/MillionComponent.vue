@@ -2,7 +2,7 @@
     <div class="million_box">
         <h1>Ciao</h1>
         <h2 @click="randomQuestion()">ciao due</h2>
-    <QuestionComponent v-bind:selectedQuestion="selectedQuestion" />
+    <QuestionComponent v-bind:questionSelected="randomQuestion()" />
     <AnswerComponent/>
     </div>
 </template>
