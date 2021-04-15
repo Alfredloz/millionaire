@@ -2,7 +2,7 @@
     <div class="answer_box">
         <h3>Seleziona una delle risposte</h3>
         <div class="single_answer d_flex">
-            <p v-for="(answer, i) in questionSelected.answers" :key="answer.key" @click="rightAnswer(i)" v-bind:class="answer.correct == false ? 'wrong_color':'right_color'">{{ answer.title }}</p>
+            <p v-for="(answer, i) in questionSelected.answers" :key="answer.key" @click="rightAnswer(i)" :class="{'rightAnswer': 'right_color'}">{{ answer.title }}</p>
         </div>
     </div>
 </template>
@@ -14,17 +14,19 @@ export default {
     },
      data(){
     return{
-      counter: 0,
+      counter: false,
     }
   },
   methods:{
     rightAnswer(index){
         if (this.questionSelected.answers[index].correct === true) {
-            
-            this.counter = 1;
+        
+            this.counter= true;
             console.log(this.counter);
         } else{
-            this.counter = 0;
+            this.counter = false;
+            console.log(this.counter);
+
         }
     //   console.log(this.questionSelected.answers[index].correct);
     }
