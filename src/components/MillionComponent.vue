@@ -152,7 +152,7 @@ export default {
             const i = Math.floor(Math.random() * this.questionsArray.length);
 
             this.questionSelected = this.questionsArray[i];
-            console.log(this.questionSelected); 
+            // console.log(this.questionSelected); 
         }
     },
 }

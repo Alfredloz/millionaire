@@ -9,6 +9,14 @@
 .d_flex{
   display: flex;
 }
+.wrong_color{
+  background-color: red;
+  color: white;
+}
+.right_color{
+  background-color: greenyellow;
+  color: white;
+}
 //  /utilities classes
 // import partials
 @import './partials/answerComponent.scss';
